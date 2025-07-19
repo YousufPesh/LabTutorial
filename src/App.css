@@ -281,3 +281,23 @@ body {
   from { opacity: 0; transform: translateY(24px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.navigate-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(80,120,255,0.08);
+  padding: 40px 40px 32px 40px;
+  margin: 0 auto 40px auto;
+  width: 700px;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .navigate-card {
+    width: 100%;
+    padding: 18px 8px 16px 8px;
+  }
+}

@@ -7,30 +7,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 function StartPage() {
   return (
     <div className="guide-container">
-      <header className="guide-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <img src="/classbuddy-dark-logo-01.png" alt="ClassBuddy Logo" style={{ height: 70, width: 'auto', marginRight: 0, borderRadius: 10 }} />
-        </div>
-        <div className="guide-demo-info" style={{ marginLeft: 'auto', textAlign: 'right' }}>
-          <span style={{
-            fontSize: '1.25rem',
-            fontWeight: 600,
-            background: 'linear-gradient(90deg, #a78bfa, #c4b5fd)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            display: 'inline-block'
-          }}>Interactive Demo</span>
-          <br />
-          <span style={{
-            fontSize: '1.15rem',
-            fontWeight: 500,
-            background: 'linear-gradient(90deg, #a78bfa, #c4b5fd)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            display: 'inline-block'
-          }}>&#126;5 minutes</span>
-        </div>
-      </header>
       <main className="guide-main">
         <h2>Classbuddy Lab</h2>
         <p className="guide-intro">
@@ -212,16 +188,12 @@ function TestPage() {
           <div style={{ color: '#888', fontSize: '1rem', marginBottom: 8 }}>Sample prompts:</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <div style={{ background: '#f8fafc', borderRadius: 10, padding: '16px 18px', fontStyle: 'italic', fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              "How did the professor find Z_B axis in the video?"
-              <CopyPrompt text="How did the professor find Z_B axis in the video?" />
+              "give me the video on balancing equations"
+              <CopyPrompt text="give me the video on balancing equations" />
             </div>
             <div style={{ background: '#f8fafc', borderRadius: 10, padding: '16px 18px', fontStyle: 'italic', fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              "What part of the video does the professor explain Z_B axis?"
-              <CopyPrompt text="What part of the video does the professor explain Z_B axis?" />
-            </div>
-            <div style={{ background: '#f8fafc', borderRadius: 10, padding: '16px 18px', fontStyle: 'italic', fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              "What is the Grubler’s formula discussed in the course?"
-              <CopyPrompt text="What is the Grubler’s formula discussed in the course?" />
+              "how did he balance h2 o2 in the video"
+              <CopyPrompt text="how did he balance h2 o2 in the video" />
             </div>
           </div>
           <div style={{ color: '#888', fontSize: '0.98rem', marginTop: 18 }}>
@@ -248,24 +220,12 @@ function CreateAgentPage() {
   return (
     <div style={{ minHeight: '100vh', padding: 0, margin: 0 }}>
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 0 0 0', textAlign: 'center' }}>
-        <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 24 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
-            <div style={{ background: '#2563eb', color: '#fff', fontWeight: 'bold', fontSize: '1.5rem', borderRadius: 10, width: 44, height: 44, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>CB</div>
-            <div>
-              <div style={{ fontSize: '1.2rem', fontWeight: 600 }}>ClassBuddy</div>
-              <div style={{ fontSize: '0.95rem', color: '#64748b' }}>InstructureCon Lab</div>
-            </div>
-          </div>
-          <div style={{ textAlign: 'right', color: '#64748b', fontSize: '0.95rem' }}>
-            Interactive Demo<br />~20 minutes
-          </div>
-        </header>
-        <div style={{ fontWeight: 500, color: '#64748b', marginBottom: 8, fontSize: '1.1rem' }}>ClassBuddy Agent Creation Lab</div>
+        <h1 style={{ fontWeight: 700, color: '#2563eb', marginBottom: 8, fontSize: '2.5rem' }}>Create a Course Discovery Agent to Boost Readiness and Reduce Workload</h1>
         <div style={{ fontSize: '1.25rem', color: '#444', marginBottom: 32 }}>
-          Learn how to navigate ClassBuddy and create your own custom Agent. Follow the step-by-step guide to get to the Agent creation interface.
+          Help students explore the courses available to them, understand their options, and choose the right path with confidence and ease.
         </div>
         {/* Navigation video for all steps */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 40 }}>
+        <div className="navigate-card">
           <div style={{ fontWeight: 700, fontSize: '2rem', marginBottom: 8 }}>Navigate</div>
           <div style={{ color: '#2563eb', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
             Back → Agent Marketplace → My Agents → Create Agent
@@ -276,9 +236,17 @@ function CreateAgentPage() {
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 60 }}>
           <form style={{ background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', padding: '40px 40px 32px 40px', width: 700, maxWidth: '100%' }}>
             <div style={{ marginBottom: 32 }}>
-              <div style={{ fontWeight: 700, fontSize: '2rem', marginBottom: 12 }}>Create an Agent</div>
-              <div style={{ color: '#64748b', fontSize: '1.1rem', marginBottom: 24 }}>
-                Copy the text below into each field to define your agent’s name, what it does, its behavior rules, starter prompts, and the data it can use. Paste everything—even the bullets—into the correct fields, then upload the files and save.
+              <div style={{ fontWeight: 700, fontSize: '2.7rem', marginBottom: 12 }}>Create an Agent</div>
+              <div style={{ color: '#64748b', fontSize: '1.1rem', marginBottom: 24, lineHeight: 2, textAlign: 'left' }}>
+                <div><b>Step 1:</b> Copy all the fields provided below, one at a time.</div>
+                <div style={{ marginTop: 16 }}>
+                  <b>Step 2:</b> Paste each field into its respective place in the agent creation form.
+                  <div style={{ fontSize: '0.98rem', color: '#94a3b8', marginLeft: 18, marginTop: 4 }}>
+                    This ensures your agent has the correct name, purpose, behavior, and prompts.
+                  </div>
+                </div>
+                <div style={{ marginTop: 16 }}><b>Step 3:</b> Upload the data files the agent will use. (available below)</div>
+                <div style={{ marginTop: 16 }}><b>Step 4:</b> Review everything and click Save to finish setting up your agent.</div>
               </div>
               <div style={{ fontWeight: 600, marginBottom: 6 }}>Name this Agent</div>
               <div style={{ display: 'flex', alignItems: 'center', marginBottom: 24 }}>
@@ -356,10 +324,11 @@ Do not invent courses not present in the uploaded data.`} />
         </div>
       </div>
       <div style={{ maxWidth: 900, margin: '0 auto', marginBottom: 12, textAlign: 'center', fontSize: '1.18rem', color: '#2563eb', fontWeight: 600 }}>
-        Done! You just learned how to create an agent that simplifies the support cycle and helps clear confusion seamlessly.
-      </div>
-      <div style={{ maxWidth: 900, margin: '0 auto', marginBottom: 24, textAlign: 'center', fontSize: '1.08rem', color: '#334155', fontWeight: 500 }}>
-        You're now ready to explore the diverse agents in the agent marketplace
+        <b>Done!</b><br/>
+        You've just created an agent designed to simplify the support experience and reduce confusion for everyone it serves.<br/>
+        <span style={{ color: '#334155', fontWeight: 500, fontSize: '1.08rem', display: 'block', marginTop: 8 }}>
+          <b>Next up:</b> You're ready to explore the diverse range of agents in the marketplace and see what else is possible.
+        </span>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: 32, margin: '40px 0 32px 0' }}>
         <Link to="/test" className="guide-nav-btn">Back: Test ClassBuddy</Link>
@@ -378,14 +347,6 @@ function ExploreMarketplacePage() {
           The Agent Marketplace is where you can discover prebuilt agents that support students, staff, and faculty across campus.<br /><br />
           Each agent has a specific job — answering questions, helping with forms, or automating routine work.
         </div>
-        <div style={{ background: '#f1f5f9', borderRadius: 12, padding: '18px 24px', margin: '0 auto 32px auto', maxWidth: 600, textAlign: 'left', color: '#2563eb', fontWeight: 600, fontSize: '1.1rem' }}>
-          🎯 Goal for This Step
-          <ul style={{ color: '#334155', fontWeight: 400, fontSize: '1.05rem', margin: '12px 0 0 0', paddingLeft: 24 }}>
-            <li>Try out a few agents already built into ClassBuddy.</li>
-            <li>Get ideas for how your campus could use agents to reduce repetitive tasks.</li>
-            <li>See how quickly you can get help without a human in the loop.</li>
-          </ul>
-        </div>
         {/* Navigation section */}
         <div style={{ background: '#fff', borderRadius: 14, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', padding: '32px 32px 24px 32px', margin: '0 auto 32px auto', maxWidth: 600, textAlign: 'center' }}>
           <div style={{ fontWeight: 600, fontSize: '1.2rem', marginBottom: 12 }}>Navigate to Marketplace</div>
@@ -393,13 +354,16 @@ function ExploreMarketplacePage() {
         </div>
         {/* Try out a trending agent section */}
         <div style={{ background: '#f1f5f9', borderRadius: 12, padding: '24px 32px', margin: '32px auto', maxWidth: 600, textAlign: 'center', color: '#334155', fontSize: '1.15rem', fontWeight: 500 }}>
-          <div style={{ fontWeight: 700, fontSize: '1.2rem', marginBottom: 10 }}>Explore the Agent Marketplace</div>
+          <div style={{ fontWeight: 700, fontSize: '1.8rem', marginBottom: 10 }}>Explore the Agent Marketplace</div>
           <div style={{ textAlign: 'left', margin: '0 auto', maxWidth: 520 }}>
-            <ol style={{ color: '#334155', fontWeight: 400, fontSize: '1.05rem', margin: '0 0 12px 0', paddingLeft: 24 }}>
-              <li>Check out the trending agents directly in your dashboard. These are the most-used agents across campuses and a great way to see what's working for others.</li>
-              <li>Click on any agent to try it out.</li>
-              <li>Scroll down and click the <b>"View All Agents"</b> button below the popular agents section. This will take you to the full marketplace, where you can browse by category, search for specific needs, or get inspired by what others have built.</li>
-            </ol>
+            Discover trending agents right from your dashboard—these are the most popular tools being used across campuses today and a great way to see what's making an impact.<br/><br/>
+            <img src="/agent dashboard ss.png" alt="Trending Agents Dashboard Screenshot" style={{ width: '70%', maxWidth: 340, borderRadius: 12, margin: '16px 0' }} /><br/>
+            <br/>
+            Click on any agent to see how it works and try it out.<br/><br/>
+            <b>Want to see more?</b><br/>
+            Scroll down and click "View All Agents" to open the full marketplace.<br/>
+            <img src="/Screenshot 2025-07-18 at 9.58.33 PM.png" alt="View All Agents Screenshot" style={{ width: '50%', maxWidth: 220, borderRadius: 12, margin: '16px 0' }} /><br/>
+            There, you can browse by category, search for specific needs, or get inspired by what others have created.
           </div>
         </div>
       </div>
