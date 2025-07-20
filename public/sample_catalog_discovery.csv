@@ -1,0 +1,4 @@
+course_id,title,desc_short,credits_min,credits_max,difficulty,gened_tags,interest_tags,prereq_flag,experience_tags,modality
+COMP 101,Intro to Programming,Learn basic programming concepts.,3,3,Intro,Science,"Coding, Data",N,Beginners,Online
+BIO 120,Fundamentals of Biology,Explore cell biology and genetics.,4,4,Intro,Science,"Biology, Health",N,Explorers,In-person
+WRIT 210,Academic Writing Workshop,Strengthen writing skills for research and analysis.,3,3,Intermediate,Writing,"Communication, Writing",Y,Writers,Hybrid
