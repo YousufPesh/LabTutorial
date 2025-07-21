@@ -15,7 +15,7 @@ function StartPage() {
         <div className="guide-steps">
           <div className="guide-step">
             <div className="guide-step-num">01</div>
-            <div className="guide-step-title">Test<br />ClassBuddy</div>
+            <div className="guide-step-title">Test<br />Classbuddy</div>
           </div>
           <div className="guide-step">
             <div className="guide-step-num">02</div>
@@ -36,7 +36,7 @@ function StartPage() {
           <span style={{ display: 'flex', alignItems: 'center', gap: 4 }}><span className="guide-benefit-icon" role="img" aria-label="Check" style={{ color: '#22c55e' }}>✅</span>Self-guided</span>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%', margin: '24px 0' }}>
-          <Link to="/test" className="guide-start-btn">Launch Your AI Lab <span style={{ fontSize: '1.2em', marginLeft: 8 }}>&#9654;</span></Link>
+          <Link to="/test" className="guide-start-btn" style={{ background: '#6323B9', color: 'white', border: 'none' }}>Launch Your AI Lab <span style={{ fontSize: '1.2em', marginLeft: 8 }}>&#9654;</span></Link>
         </div>
       </main>
     </div>
@@ -47,7 +47,7 @@ function TestPage() {
   return (
     <div style={{ minHeight: '100vh', padding: '0', margin: '0' }}>
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 0 0 0', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: 12 }}>Step 1: Test ClassBuddy</h1>
+        <h1 style={{ fontSize: '3rem', fontWeight: 700, marginBottom: 12 }}>Step 1: Test Classbuddy</h1>
         <div style={{ fontSize: '1.25rem', color: '#444', marginBottom: 36, textAlign: 'left', maxWidth: 600, marginLeft: 'auto', marginRight: 'auto', lineHeight: 1.7 }}>
           <div style={{ marginBottom: 18, textAlign: 'center' }}>
             Now it’s your turn to interact with the Virtual TA and see how it responds across different areas of student life.
@@ -173,8 +173,8 @@ function TestPage() {
         {/* Guardrails Category Card */}
         <div style={{ background: '#fff', borderRadius: 18, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', padding: '32px 32px 24px 32px', marginBottom: 32, borderTop: '6px solid #fbbf24' }}>
           <div style={{ color: '#fbbf24', fontWeight: 700, fontSize: '0.95rem', marginBottom: 8 }}>GUARDRAILS</div>
-          <div style={{ fontWeight: 700, fontSize: '1.5rem', marginBottom: 8 }}>D. Guardrails (Things ClassBuddy Won't Do)</div>
-          <div style={{ color: '#444', marginBottom: 18 }}>ClassBuddy will not do your work for you or provide direct answers.</div>
+          <div style={{ fontWeight: 700, fontSize: '1.5rem', marginBottom: 8 }}>D. Guardrails (Things Classbuddy Won't Do)</div>
+          <div style={{ color: '#444', marginBottom: 18 }}>Classbuddy will not do your work for you or provide direct answers.</div>
           <div style={{ color: '#888', fontSize: '1rem', marginBottom: 8 }}>Sample prompts:</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <div style={{ background: '#f8fafc', borderRadius: 10, padding: '16px 18px', fontStyle: 'italic', fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
@@ -187,7 +187,7 @@ function TestPage() {
             </div>
           </div>
           <div style={{ color: '#888', fontSize: '0.98rem', marginTop: 18 }}>
-            <b>Note:</b> ClassBuddy is here to help you learn, not to do your work for you.
+            <b>Note:</b> Classbuddy is here to help you learn, not to do your work for you.
           </div>
         </div>
         {/* Lecture/Video Help Category Card */}
@@ -211,12 +211,12 @@ function TestPage() {
           </div>
         </div>
       </div>
-      <div style={{ maxWidth: 700, margin: '0 auto', marginBottom: 12, textAlign: 'center', fontSize: '1.18rem', color: '#2563eb', fontWeight: 700 }}>
+      <div style={{ maxWidth: 700, margin: '0 auto', marginBottom: 12, textAlign: 'center', fontSize: '1.18rem', color: '#6323B9', fontWeight: 700 }}>
         <b>Great job!</b><br />
         You just saw how students get real-time support to stay productive — while your team saves time and energy.
       </div>
-      <div style={{ maxWidth: 700, margin: '0 auto', marginBottom: 24, textAlign: 'center', fontSize: '1.08rem', color: '#334155', fontWeight: 500 }}>
-        <b>Next up:</b> Let’s build your own agent and see the magic from the other side.
+      <div style={{ maxWidth: 700, margin: '0 auto', marginBottom: 24, textAlign: 'center', fontSize: '1.08rem', color: '#140726', fontWeight: 500 }}>
+        <b>Next up:</b> Let's build your own agent and see the magic from the other side.
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: 32, margin: '40px 0 32px 0' }}>
         <Link to="/" className="guide-nav-btn">Back: Start</Link>
@@ -230,17 +230,17 @@ function CreateAgenticAIPage() {
   return (
     <div style={{ minHeight: '100vh', padding: 0, margin: 0 }}>
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 0 0 0', textAlign: 'center' }}>
-        <h1 style={{ fontWeight: 700, color: '#2563eb', marginBottom: 8, fontSize: '2.5rem' }}>Create an IT Help Desk Agent to Streamline Support and Ticket Creation</h1>
-        <div style={{ fontSize: '1.25rem', color: '#444', marginBottom: 32 }}>
+        <h1 style={{ fontWeight: 700, color: '#6323B9', marginBottom: 8, fontSize: '2.5rem' }}>Create an IT Help Desk Agent to Streamline Support and Ticket Creation</h1>
+        <div style={{ fontSize: '1.25rem', color: '#140726', marginBottom: 32 }}>
           Help users quickly create and track IT support tickets, reducing wait times and improving the help desk experience for everyone.
         </div>
         {/* Navigation video for all steps */}
         <div className="navigate-card">
           <div style={{ fontWeight: 700, fontSize: '2rem', marginBottom: 8 }}>Navigate</div>
-          <div style={{ color: '#2563eb', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
+          <div style={{ color: '#6323B9', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
             Back → Agent Marketplace → My Agents → Create Agent
           </div>
-          <video src="/Screen Recording 2025-07-17 at 2.46.49 PM.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
+          <video src="/Screen Recording 2025-07-17 at 2.46.49 PM.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
         </div>
         {/* Read-only form for copying values to create the agent */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 60 }}>
@@ -276,8 +276,8 @@ If you do not receive the details about the ticket link and incident number, thi
 
                 <div style={{ marginTop: 24 }}><b>Step 4:</b> Copy the conversation starter below and paste it into the "Conversation starters" field.</div>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: 24, marginTop: 12 }}>
-                  <input type="text" readOnly value="I need help to create IT Support Ticket." style={{ width: '100%', padding: '14px 12px', borderRadius: 8, border: '1px solid #e5e7eb', fontSize: '1.1rem', background: '#f9fafb' }} />
-                  <CopyButton value="I need help to create IT Support Ticket." />
+                  <input type="text" readOnly value="I need help with my computer." style={{ width: '100%', padding: '14px 12px', borderRadius: 8, border: '1px solid #e5e7eb', fontSize: '1.1rem', background: '#f9fafb' }} />
+                  <CopyButton value="I need help with my computer." />
                 </div>
 
                 <div style={{ marginTop: 24 }}><b>Step 5:</b> Set the category to "Information Technology Service" (should be pre-selected).</div>
@@ -470,10 +470,10 @@ If you do not receive the details about the ticket link and incident number, thi
           </form>
         </div>
       </div>
-      <div style={{ maxWidth: 900, margin: '0 auto', marginBottom: 12, textAlign: 'center', fontSize: '1.18rem', color: '#2563eb', fontWeight: 600 }}>
+      <div style={{ maxWidth: 900, margin: '0 auto', marginBottom: 12, textAlign: 'center', fontSize: '1.18rem', color: '#6323B9', fontWeight: 600 }}>
         <b>Done!</b><br />
         You've just created an agent designed to simplify the support experience and reduce confusion for everyone it serves.<br />
-        <span style={{ color: '#334155', fontWeight: 500, fontSize: '1.08rem', display: 'block', marginTop: 8 }}>
+        <span style={{ color: '#140726', fontWeight: 500, fontSize: '1.08rem', display: 'block', marginTop: 8 }}>
           <b>Next up:</b> You're ready to explore the diverse range of agents in the marketplace and see what else is possible.
         </span>
       </div>
@@ -489,17 +489,17 @@ function CreateAgentPage() {
   return (
     <div style={{ minHeight: '100vh', padding: 0, margin: 0 }}>
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 0 0 0', textAlign: 'center' }}>
-        <h1 style={{ fontWeight: 700, color: '#2563eb', marginBottom: 8, fontSize: '2.5rem' }}>Create a Course Discovery Agent to Boost Readiness and Reduce Workload</h1>
-        <div style={{ fontSize: '1.25rem', color: '#444', marginBottom: 32 }}>
+        <h1 style={{ fontWeight: 700, color: '#6323B9', marginBottom: 8, fontSize: '2.5rem' }}>Create a Course Discovery Agent to Boost Readiness and Reduce Workload</h1>
+        <div style={{ fontSize: '1.25rem', color: '#140726', marginBottom: 32 }}>
           Help students explore the courses available to them, understand their options, and choose the right path with confidence and ease.
         </div>
         {/* Navigation video for all steps */}
         <div className="navigate-card">
           <div style={{ fontWeight: 700, fontSize: '2rem', marginBottom: 8 }}>Navigate</div>
-          <div style={{ color: '#2563eb', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
+          <div style={{ color: '#6323B9', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
             Back → Agent Marketplace → My Agents → Create Agent
           </div>
-          <video src="/Screen Recording 2025-07-17 at 2.46.49 PM.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
+          <video src="/Screen Recording 2025-07-17 at 2.46.49 PM.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
         </div>
         {/* Read-only form for copying values to create the agent */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 60 }}>
@@ -609,10 +609,10 @@ Do not invent courses not present in the uploaded data.`} />
 
 function ExploreMarketplacePage() {
   return (
-    <div className="guide-page" style={{ minHeight: '100vh', padding: 0, margin: 0 }}>
-      <div style={{ maxWidth: 700, margin: '0 auto', padding: '48px 0 0 0', textAlign: 'center' }}>
+    <div style={{ minHeight: '100vh', padding: 0, margin: 0 }}>
+      <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 0 0 0', textAlign: 'center' }}>
         <h1 style={{ fontSize: '2.2rem', fontWeight: 700, marginBottom: 18 }}>Explore the Agent Marketplace</h1>
-        <div style={{ color: '#334155', fontSize: '1.15rem', marginBottom: 24 }}>
+        <div style={{ color: '#140726', fontSize: '1.15rem', marginBottom: 24 }}>
           The Agent Marketplace is where you can discover prebuilt agents that support students, staff, and faculty across campus.<br /><br />
           Each agent has a specific job — answering questions, helping with forms, or automating routine work.
         </div>
@@ -635,6 +635,40 @@ function ExploreMarketplacePage() {
             There, you can browse by category, search for specific needs, or get inspired by what others have created.
           </div>
         </div>
+      </div>
+      {/* Free Trial CTA Section */}
+      <div style={{ background: 'linear-gradient(135deg, #6323b9 0%, #4c1d95 100%)', borderRadius: 16, padding: '40px 32px', margin: '40px auto', maxWidth: 600, textAlign: 'center', color: 'white', boxShadow: '0 4px 20px rgba(99, 35, 185, 0.3)' }}>
+        <div style={{ fontWeight: 700, fontSize: '1.8rem', marginBottom: 12 }}>Ready to Get Started?</div>
+        <div style={{ fontSize: '1.2rem', marginBottom: 24, opacity: 0.95 }}>
+          Use ClassBuddy.ai free for up to 3 courses this Fall semester.
+        </div>
+        <a
+          href="https://classbuddy.ai/exclusive-classbuddy-free-trial-fall/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-block',
+            background: 'white',
+            color: '#6323B9',
+            padding: '16px 32px',
+            borderRadius: 12,
+            textDecoration: 'none',
+            fontWeight: 700,
+            fontSize: '1.1rem',
+            transition: 'all 0.2s ease',
+            boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+          }}
+          onMouseOver={(e) => {
+            e.target.style.transform = 'translateY(-2px)';
+            e.target.style.boxShadow = '0 4px 16px rgba(0,0,0,0.15)';
+          }}
+          onMouseOut={(e) => {
+            e.target.style.transform = 'translateY(0)';
+            e.target.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+          }}
+        >
+          Sign Up for Test Drive
+        </a>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', gap: 32, margin: '40px 0 32px 0' }}>
         <Link to="/create-agentic-ai" className="guide-nav-btn">Back: Create Agentic AI Agent</Link>
@@ -682,14 +716,19 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div>
+    <div style={{ backgroundColor: '#EDE7F5', minHeight: '100vh' }}>
       <ScrollToTop />
       <nav className="guide-nav">
-        <Link to="/">Start</Link>
-        <Link to="/test">Test</Link>
-        <Link to="/create-agent">Create Agent</Link>
-        <Link to="/create-agentic-ai">Create Agentic AI</Link>
-        <Link to="/explore-marketplace">Marketplace</Link>
+        <Link to="/" style={{ display: 'flex', textDecoration: 'none' }}>
+          <img src="/classbuddy-white-logo.svg" alt="ClassBuddy" style={{ height: '32px', marginRight: '16px' }} />
+        </Link>
+        <div style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+          <Link to="/">Start</Link>
+          <Link to="/test">Test</Link>
+          <Link to="/create-agent">Create Agent</Link>
+          <Link to="/create-agentic-ai">Create Agentic AI</Link>
+          <Link to="/explore-marketplace">Marketplace</Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<StartPage />} />
