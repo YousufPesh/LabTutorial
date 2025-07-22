@@ -122,10 +122,6 @@ function TestPage() {
               <CopyPrompt text="Can you summarize today’s key points in a few bullet points?" />
             </div>
             <div style={{ background: '#f8fafc', borderRadius: 10, padding: '16px 18px', fontStyle: 'italic', fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              "How many classes can I miss in a semester according to the syllabus?"
-              <CopyPrompt text="How many classes can I miss in a semester according to the syllabus?" />
-            </div>
-            <div style={{ background: '#f8fafc', borderRadius: 10, padding: '16px 18px', fontStyle: 'italic', fontSize: '1.1rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               "What are the key takeaways from the week 3 reading?"
               <CopyPrompt text="What are the key takeaways from the week 3 reading?" />
             </div>
@@ -240,7 +236,7 @@ function CreateAgenticAIPage() {
           <div style={{ color: '#6323B9', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
             Back → Agent Marketplace → My Agents → Create Agent
           </div>
-          <video src="/Screen Recording 2025-07-17 at 2.46.49 PM.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
+          <video src="/videoPart1.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
         </div>
         {/* Read-only form for copying values to create the agent */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 60 }}>
@@ -499,7 +495,7 @@ function CreateAgentPage() {
           <div style={{ color: '#6323B9', fontWeight: 600, fontSize: '1.2rem', marginBottom: 24, textAlign: 'center' }}>
             Back → Agent Marketplace → My Agents → Create Agent
           </div>
-          <video src="/Screen Recording 2025-07-17 at 2.46.49 PM.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
+          <video src="/videoPart1.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
         </div>
         {/* Read-only form for copying values to create the agent */}
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 60 }}>
@@ -572,10 +568,6 @@ Do not invent courses not present in the uploaded data.`} />
                   <input type="text" readOnly value="I still need a writing requirement." style={{ width: '100%', padding: '14px 12px', borderRadius: 8, border: '1px solid #e5e7eb', fontSize: '1.1rem', background: '#f9fafb' }} />
                   <CopyButton value="I still need a writing requirement." />
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center' }}>
-                  <input type="text" readOnly value="Something outside my major?" style={{ width: '100%', padding: '14px 12px', borderRadius: 8, border: '1px solid #e5e7eb', fontSize: '1.1rem', background: '#f9fafb' }} />
-                  <CopyButton value="Something outside my major?" />
-                </div>
               </div>
               <div style={{ fontWeight: 600, marginBottom: 6 }}>Category</div>
               <select disabled style={{ width: '100%', padding: '14px 12px', borderRadius: 8, border: '1px solid #e5e7eb', fontSize: '1.1rem', background: '#f9fafb' }}>
@@ -584,8 +576,8 @@ Do not invent courses not present in the uploaded data.`} />
               {/* Knowledge Base section */}
               <div style={{ fontWeight: 600, margin: '32px 0 6px 0' }}>Knowledge Base</div>
               <div style={{ color: '#888', fontSize: '1rem', marginBottom: 12 }}>Download and drag this file into the Knowledge Base section in the Lab.</div>
-              <a href="/sample_catalog_discovery.csv" download style={{ display: 'block', width: '100%', padding: '32px 0', border: '2px dashed #a5b4fc', borderRadius: 12, background: '#f8fafc', textAlign: 'center', color: '#2563eb', fontWeight: 600, fontSize: '1.1rem', textDecoration: 'none', marginBottom: 24, cursor: 'pointer' }}>
-                📄 sample_catalog_discovery.csv<br />
+              <a href="/sample_catalog_meta.md" download style={{ display: 'block', width: '100%', padding: '32px 0', border: '2px dashed #a5b4fc', borderRadius: 12, background: '#f8fafc', textAlign: 'center', color: '#2563eb', fontWeight: 600, fontSize: '1.1rem', textDecoration: 'none', marginBottom: 24, cursor: 'pointer' }}>
+                📄 sample_catalog_meta.md<br />
                 <span style={{ fontWeight: 400, color: '#64748b', fontSize: '1rem' }}>(Drag and drop this file into the Lab)</span>
               </a>
             </div>
@@ -619,7 +611,7 @@ function ExploreMarketplacePage() {
         {/* Navigation section */}
         <div style={{ background: '#fff', borderRadius: 14, boxShadow: '0 2px 12px rgba(0,0,0,0.06)', padding: '32px 32px 24px 32px', margin: '0 auto 32px auto', maxWidth: 600, textAlign: 'center' }}>
           <div style={{ fontWeight: 600, fontSize: '1.2rem', marginBottom: 12 }}>Navigate to Marketplace</div>
-          <video src="/Screen Recording 2025-07-17 at 3.49.34 PM.mov" style={{ width: '100%', maxWidth: 520, borderRadius: 12, boxShadow: '0 2px 12px rgba(0,0,0,0.08)', margin: '0 auto 18px auto', display: 'block' }} autoPlay loop muted controls playsInline />
+          <video src="/videoPart2MarketPlace.mov" style={{ width: 700, maxWidth: '100%', borderRadius: 16, boxShadow: '0 2px 12px rgba(0,0,0,0.08)' }} autoPlay loop muted controls playsInline />
         </div>
         {/* Try out a trending agent section */}
         <div style={{ background: '#f1f5f9', borderRadius: 12, padding: '24px 32px', margin: '32px auto', maxWidth: 600, textAlign: 'center', color: '#334155', fontSize: '1.15rem', fontWeight: 500 }}>
